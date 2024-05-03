@@ -1,16 +1,12 @@
-import { useState } from 'react'
 import './App.css'
-import {Button} from "./stories/Button.tsx";
+import Counter from "./components/Counter";
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-        <Button label={"" + count} primary={true} onClick={() => setCount((count) => count + 1)}>
-        </Button>
-    </>
-  )
+    return (
+        <>
+            <Counter></Counter>
+        </>
+    )
 }
 
 export default App
